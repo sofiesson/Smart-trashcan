@@ -19,10 +19,8 @@ The purpose of this project is to develop a smart trashcan that can provide remi
 * How to create responsive and helpful device to solve real-life problems using the Raspberry Pi Pico
 
 ## :paperclip: Materials
-:::info
 :coin: **Overall budget:** 600-700kr  
 :package: Materials that I already owned was cardboard, tape, glue and metal rod for the hinges of the lid.
-:::
 
 This table shows all the materials I have used, their purpose, cost and links of where I bought them from.
 
@@ -40,13 +38,11 @@ This table shows all the materials I have used, their purpose, cost and links of
 |             2x  330 ohm Resistors             |            power            | 4kr  | [link](https://www.electrokit.com/motstand-1w-5330ohm-330r)                                                                         |
 
 ## :computer: Computer Setup
-:::info
 :bell: The tools I used for my setup are:  
 * **Thonny**
 * **Micropython firmware**  
 
 To upload code, I flashed the micropython firmware into the pico and I can just code directly using Thonny.
-:::
 
 ### Thonny
 I used Thonny for this project as it is easy to use and very beginner friendly, which can be downloaded [here](https://thonny.org/)
@@ -59,7 +55,6 @@ The only other tool you need is the micropython firmware so you could run python
 The following illustration shows an overview of the wiring and connections between the sensors, the microcontroller and the other components used for this project.
 ![SmartTrashcan](https://hackmd.io/_uploads/r1V4_fJSgl.png)
 
-:::info
 :memo: **Circuit calculations:** It is important for this project to ensure that the total power consumption does not exceed the capabilities that the Raspberry Pi Pico has.  
 
 **Using ohms law**  
@@ -74,7 +69,6 @@ The following illustration shows an overview of the wiring and connections betwe
 |                2-color 5mm LED                |     5V     |    4 mA    |
 | Combination sensor (temperature and humidity) |  3.3 - 5V  |   2.5 mA   |
 
-:::
 
 ## :cloud: Code snippets
 **Lid status**: The lid will automatically open when the distance sensor detects an object within 10 cm or less, otherwise the lid will stay closed. It will also publish in Adafruit IO whenever it's open or closed, but it will only actually publish if the lid state has changed.
@@ -172,9 +166,8 @@ I also added an action in Adafruit IO to sent a message through my own discord s
 ![Screenshot 2025-06-24 at 11.30.08](https://hackmd.io/_uploads/SJb_exd4gg.png)
 
 ## :sparkler: Finalizing the design
-:::info
-:clapper: Video demonstration: https://youtu.be/JLW9DjHuwIo 
-:::
+Video demonstration: https://youtu.be/JLW9DjHuwIo   
+
 Overall, I am satisfied with the outcome of my project and while the physical appearance doesn't necessarily meet my standards and could be improved, I believe that the main functionalities is the most important part which works as it should and does meet my expectations.
 
 If I had more time and resources, I would have definitely focused more on the design aspect of it, particularly by using a 3d-printer however I do not have access to one, which limited the overall appearance as I'm not very good with designing handmade things. Additionally, I had several more ideas that i would have explored to make the smart trashcan more optimal, effective and inclusive. Such as a multi-level detectection system for fullness, height-adjustable lid mechanism, having recycling sorting and maybe for fun, having an LCD display.
